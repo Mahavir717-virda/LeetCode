@@ -10,7 +10,11 @@ public:
                 ans.push_back(temp);
                 n1 /= 10;
             }
-            if (ans.size() == 2) {
+            if (ans.size() == 1) {
+                if (ans[0] % t == 0) {
+                    y = min(y, n);
+                }
+            } else if (ans.size() == 2) {
                 int x = ans[0] * ans[1];
                 if (x % t == 0) {
                     y = min(y, n);
