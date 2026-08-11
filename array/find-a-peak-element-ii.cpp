@@ -20,8 +20,8 @@ public:
 
             int row = elementRow(mat, mid);
 
-            int left = (mid - 1 > 0) ? mat[row][mid - 1] : -1;
-            int right = (mid + 1 < (high - 1)) ? mat[row][mid + 1] : -1;
+            int left = (mid - 1 >= 0) ? mat[row][mid - 1] : -1;
+            int right = mid + 1 < high ? mat[row][mid + 1] : -1;
 
             if (mat[row][mid] > left && mat[row][mid] > right) {
                 return {row, mid};
