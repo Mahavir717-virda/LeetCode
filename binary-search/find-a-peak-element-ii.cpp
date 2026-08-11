@@ -1,9 +1,9 @@
 class Solution {
 public:
-    int elementRow(vector<vector<int>>& mat, int row, int col) {
+    int elementRow(vector<vector<int>>& mat, int col) {
         int maxval = -1;
         int idx = -1;
-        for (int i = row; i < mat.size(); i++) {
+        for (int i = 0; i < mat.size(); i++) {
             if (mat[i][col] > maxval) {
                 maxval = mat[i][col];
                 idx = i;
@@ -18,7 +18,7 @@ public:
         while (low <= high) {
             int mid = (low + high) / 2;
 
-            int row = elementRow(mat, low, mid);
+            int row = elementRow(mat, mid);
 
             int left = (mid - 1 > 0) ? mat[row][mid - 1] : -1;
             int right = (mid + 1 < (high - 1)) ? mat[row][mid + 1] : -1;
