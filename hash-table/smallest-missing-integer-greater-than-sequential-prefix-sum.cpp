@@ -9,7 +9,7 @@ public:
         for (int i = 1; i < nums.size(); i++) {
             if (nums[i - 1] + 1 == nums[i]) {
                 sum += nums[i];
-            } 
+            } else break;
         }
         int missing = sum;
         
