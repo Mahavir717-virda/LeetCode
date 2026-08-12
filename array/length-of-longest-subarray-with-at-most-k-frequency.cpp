@@ -11,10 +11,10 @@ public:
             } else {
                 mp[nums[j]]++;
                 j++;
-                while (i < j and mp[nums[i]] > k) {
+                while (i < j and mp[nums[j - 1]] > k) {
                     mp[nums[i]]--;
+                    i++;
                 }
-                i++;
             }
 
             maxLen = max(maxLen, j - i);
