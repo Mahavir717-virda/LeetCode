@@ -18,7 +18,6 @@ public:
             }
 
             maxLen = max(maxLen, j - i);
-            cout << maxLen << " ";
         }
 
         return maxLen;
