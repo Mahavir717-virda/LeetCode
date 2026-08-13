@@ -23,7 +23,7 @@ public:
                 } else {
                     c = s[high];
                     low = high;
-                    length = max(length, high - low);
+                    length = max(length, high - low + 1);
                 }
             }
 
