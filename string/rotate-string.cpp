@@ -1,13 +1,19 @@
 class Solution {
 public:
     bool rotateString(string s, string goal) {
-        int cnt = 0;
-        while (cnt > s.size() * 2) {
+        if(s.size() == 1 && goal.size() == 1)
+        {
+            if(s != goal)
+            {
+                return false;
+            }
+        }
+        while (true) {
             int i = 1, j = s.size();
 
             char c = s[0];
             while (i < s.size()) {
-                s[i -1] = s[i];
+                s[i - 1] = s[i];
                 i++;
             }
 
@@ -17,7 +23,6 @@ public:
             {
                 return true;
             }
-            cnt++;
         }
         return false;
     }
