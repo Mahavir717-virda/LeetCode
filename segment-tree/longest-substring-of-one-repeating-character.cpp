@@ -7,27 +7,26 @@ public:
         int n = s.size();
 
         for (int i = 0; i < queryCharacters.size(); i++) {
-            if (s.size() == 1) {
+            if (n == 1) {
                 lengths.push_back(1);
                 continue;
             }
-            int length = 0;
             char queryChar = queryCharacters[i];
             int queryCharIdx = queryIndices[i];
 
             s[queryCharIdx] = queryChar;
 
+            int length = 1;  // length is 1 for any one char
             int low = 0, high = 1;
-
             char c = s[0];
             while (high < s.size()) {
                 if (c == s[high]) {
+                    length = max(length, high - low + 1);
                     high++;
-                    length = max(length, high - low);
                 } else {
                     c = s[high];
                     low = high;
-                    length = max(length, high - low + 1);
+                    high++;
                 }
             }
 
