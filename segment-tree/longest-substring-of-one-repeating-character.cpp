@@ -7,6 +7,10 @@ public:
         int n = s.size();
 
         for (int i = 0; i < queryCharacters.size(); i++) {
+            if (s.size() == 1) {
+                lengths.push_back(1);
+                continue;
+            }
             int length = 0;
             char queryChar = queryCharacters[i];
             int queryCharIdx = queryIndices[i];
