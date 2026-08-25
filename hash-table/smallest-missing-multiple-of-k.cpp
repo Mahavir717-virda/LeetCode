@@ -3,18 +3,18 @@ public:
     int missingMultiple(vector<int>& nums, int k) {
         int cnt = 1;
         int sm = k;
-        unordered_map<int,int> mp;
+        set<int> s;
         for(auto it : nums)
         {
-            mp[it]++;
+            s.insert(it);
         }
 
-        if(mp.find(k) == mp.end())
+        if(s.find(k) == s.end())
             return k;
 
-        for(auto it : mp)
+        for(auto it : s)
         {
-            if(it.first % k == 0)
+            if(it % k == 0)
             {
                 cnt++;
             }
