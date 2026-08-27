@@ -1,14 +1,12 @@
 class Solution {
 public:
     string lexGreaterPermutation(string s, string target) {
-        map<int,int> mps;
-        map<int,int> mpt;
+        sort(s.begin(), s.end());
+        do {
+            if(s > target)
+                return s;
+        }while(next_permutation(s.begin(), s.end()));
 
-        for(int i = 0;i < s.size(); i++)
-        {
-            mps[s[i]]++;
-        }
-        
-
+        return "";
     }
 };
