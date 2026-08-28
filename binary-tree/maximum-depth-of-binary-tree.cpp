@@ -15,8 +15,6 @@ public:
     int height = 0;
     queue<TreeNode*> q;
     void BFS(TreeNode* root) {
-        if (root == NULL)
-            return;
         q.push(root);
         while (!q.empty()) {
             int size = q.size();
@@ -35,6 +33,8 @@ public:
         }
     }
     int maxDepth(TreeNode* root) {
+        if (root == NULL)
+            return 0;
         BFS(root);
         return height;
     }
