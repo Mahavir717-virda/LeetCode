@@ -4,17 +4,16 @@ public:
         int cnt = 0, n = nums.size();
         bool fmin = false, fmax = false;
         for (int i = 0; i < n; i++) {
-            if (fmin and fmax)
-                return cnt;
+            cnt++;
 
             if (nums[i] == min) {
                 fmin = true;
-                cnt++;
             } else if (nums[i] == max) {
                 fmax = true;
-                cnt++;
-            } else
-                cnt++;
+            }
+
+            if (fmin and fmax)
+                return cnt;
         }
 
         return cnt;
@@ -23,56 +22,44 @@ public:
         int cnt = 0, n = nums.size();
         bool fmin = false, fmax = false;
         for (int i = n - 1; i >= 0; i--) {
-            if (fmin and fmax)
-                return cnt;
+            cnt++;
 
             if (nums[i] == min) {
                 fmin = true;
-                cnt++;
             } else if (nums[i] == max) {
                 fmax = true;
-                cnt++;
-            } else
-                cnt++;
+            }
+
+            if (fmin and fmax)
+                return cnt;
         }
 
         return cnt;
     }
     int fromboth(vector<int>& nums, int min, int max) {
-        int cnt = 0, n = nums.size();
-        bool fmin = false, fmax = false;
-        int i = 0, j = n - 1;
-        while (i < j) {
-            if (fmin and fmax)
-                return cnt;
-            // from left check min or max
-            if (nums[i] == min) {
-                fmin = true;
-                cnt++;
-            } else if (nums[i] == max) {
-                fmax = true;
-                cnt++;
+        int lcnt = 0, rcnt = 0, n = nums.size();
+         for (int i = 0; i < n; i++) {
+            lcnt++;
+            if (nums[i] == min || nums[i] == max) {
+                break;
             }
-            // from right check min or max
-            if (nums[j] == min) {
-                fmin = true;
-                cnt++;
-            } else if (nums[j] == max) {
-                fmax = true;
-                cnt++;
-            }
-            cnt++;
-            i++;
-            j--;
         }
-        return cnt;
+
+        for (int i = n - 1; i >= 0; i--) {
+            rcnt++;
+            if (nums[i] == min || nums[i] == max) {
+                break;
+            } 
+        }
+
+        return lcnt + rcnt;
     }
     int minimumDeletions(vector<int>& nums) {
 
-        if(nums.size() == 1)
+        if (nums.size() == 1)
             return 1;
-        
-        if(nums.size() == 2)
+
+        if (nums.size() == 2)
             return 2;
 
         auto minele = *min_element(nums.begin(), nums.end());
