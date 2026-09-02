@@ -21,12 +21,6 @@ public:
         //     }
         // if(ans) return ans;
 
-
-        // for(int i = 0;i<n;i++)
-        //     {
-                
-        //     }
-
         return true;
     }
 };
