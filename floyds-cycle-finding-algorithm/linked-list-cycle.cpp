@@ -9,21 +9,16 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        vector<int> v;
         ListNode* temp = head;
+        int cnt = 0;
         while(temp!=nullptr)
         {
-            v.push_back(temp->val);
-        }
-
-        int cnt = 0;
-        ListNode *temp1 = head;
-        while(temp1 != nullptr)
-        {
-            if(cnt > v.size())
-                return false;
+            if(cnt > 10000)
+            {
+                return true;
+            }
+            temp = temp->next;
             cnt++;
-            temp1 = temp1->next;
         }
 
         return false;
