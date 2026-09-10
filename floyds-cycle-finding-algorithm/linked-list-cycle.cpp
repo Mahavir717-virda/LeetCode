@@ -10,15 +10,17 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
         ListNode* temp = head;
-        int cnt = 0;
         while(temp!=nullptr)
         {
-            if(cnt > 10000)
+            if(temp->val  ==  -1)
             {
                 return true;
             }
+            else
+            {
+                temp->val = -1;
             temp = temp->next;
-            cnt++;
+            }
         }
 
         return false;
