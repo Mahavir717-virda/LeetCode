@@ -8,18 +8,14 @@
  */
 class Solution {
 public:
-    bool hasCycle(ListNode *head) {
+    bool hasCycle(ListNode* head) {
         ListNode* temp = head;
-        while(temp!=nullptr)
-        {
-            if(temp->val  ==  -1)
-            {
+        while (temp != nullptr) {
+            if (temp->val == 100001) {
                 return true;
-            }
-            else
-            {
-                temp->val = -1;
-            temp = temp->next;
+            } else {
+                temp->val = 100001;
+                temp = temp->next;
             }
         }
 
