@@ -1,20 +1,20 @@
 class Solution {
 public:
+    int memo[46];
+
+    int down(int n) {
+        if (n < 0) return 0;
+        if (n == 0) return 1;
+        
+        if (memo[n] != -1) return memo[n];
+        
+        return memo[n] = down(n - 1) + down(n - 2);
+    }
+
     int climbStairs(int n) {
-        if (n <= 2) {
-            return n;
-        }
+        if (n <= 1) return n;
         
-        int prev2 = 1; 
-        int prev1 = 2; 
-        int current = 0;
-        
-        for (int i = 3; i <= n; ++i) {
-            current = prev1 + prev2;
-            prev2 = prev1;
-            prev1 = current;
-        }
-        
-        return current;
+        memset(memo, -1, sizeof(memo));
+        return down(n);
     }
 };
