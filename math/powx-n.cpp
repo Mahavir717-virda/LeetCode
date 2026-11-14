@@ -1,23 +1,29 @@
 class Solution {
 public:
-    double calc(double x, int n, int cnt) {
-        if (cnt > n) {
+    double CalcPow(double x, long long N) {
+        if (N == 0)
             return 1.0;
-        }
 
-        return x * calc(x, n, cnt+1);
+        if (N % 2 == 0) {
+            return CalcPow(x * x, N / 2);
+        } else {
+            return x * CalcPow(x, N - 1);
+        }
     }
     double myPow(double x, int n) {
+        double ans = 1.0;
+        bool isNegative = false;
         long long N = n;
-
-        if(N < 0)
-        {
-           N = -N;
-           double ans = calc(x,N,1);
-           ans = 1 / ans;
-           return ans;
+        if (N < 0) {
+            isNegative = true;
+            N = (long long)-N;
         }
 
-        return calc(x,N,1);
+        ans = CalcPow(x, N);
+
+        if (isNegative)
+            return 1 / ans;
+
+        return ans;
     }
 };
