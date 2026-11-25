@@ -13,6 +13,7 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 ## Math
 |  |
 | ------- |
+| [0412-fizz-buzz](https://github.com/Mahavir717-virda/LeetCode/tree/master/0412-fizz-buzz) |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Mahavir717-virda/LeetCode/tree/master/3411-maximum-subarray-with-equal-products) |
 ## Sliding Window
 |  |
@@ -26,4 +27,12 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 |  |
 | ------- |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Mahavir717-virda/LeetCode/tree/master/3411-maximum-subarray-with-equal-products) |
+## String
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/Mahavir717-virda/LeetCode/tree/master/0412-fizz-buzz) |
+## Simulation
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/Mahavir717-virda/LeetCode/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->
