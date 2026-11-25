@@ -30,9 +30,18 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 ## String
 |  |
 | ------- |
+| [0409-longest-palindrome](https://github.com/Mahavir717-virda/LeetCode/tree/master/0409-longest-palindrome) |
 | [0412-fizz-buzz](https://github.com/Mahavir717-virda/LeetCode/tree/master/0412-fizz-buzz) |
 ## Simulation
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/Mahavir717-virda/LeetCode/tree/master/0412-fizz-buzz) |
+## Hash Table
+|  |
+| ------- |
+| [0409-longest-palindrome](https://github.com/Mahavir717-virda/LeetCode/tree/master/0409-longest-palindrome) |
+## Greedy
+|  |
+| ------- |
+| [0409-longest-palindrome](https://github.com/Mahavir717-virda/LeetCode/tree/master/0409-longest-palindrome) |
 <!---LeetCode Topics End-->
