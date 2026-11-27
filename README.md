@@ -9,6 +9,7 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 ## Array
 |  |
 | ------- |
+| [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Mahavir717-virda/LeetCode/tree/master/3411-maximum-subarray-with-equal-products) |
 ## Math
 |  |
@@ -40,6 +41,7 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 |  |
 | ------- |
 | [0409-longest-palindrome](https://github.com/Mahavir717-virda/LeetCode/tree/master/0409-longest-palindrome) |
+| [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
 ## Greedy
 |  |
 | ------- |
@@ -48,4 +50,16 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 |  |
 | ------- |
 | [0799-champagne-tower](https://github.com/Mahavir717-virda/LeetCode/tree/master/0799-champagne-tower) |
+## Two Pointers
+|  |
+| ------- |
+| [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
+## Binary Search
+|  |
+| ------- |
+| [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
+## Sorting
+|  |
+| ------- |
+| [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
 <!---LeetCode Topics End-->
