@@ -9,6 +9,7 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 ## Array
 |  |
 | ------- |
+| [0496-next-greater-element-i](https://github.com/Mahavir717-virda/LeetCode/tree/master/0496-next-greater-element-i) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
 | [3411-maximum-subarray-with-equal-products](https://github.com/Mahavir717-virda/LeetCode/tree/master/3411-maximum-subarray-with-equal-products) |
 ## Math
@@ -41,6 +42,7 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 |  |
 | ------- |
 | [0409-longest-palindrome](https://github.com/Mahavir717-virda/LeetCode/tree/master/0409-longest-palindrome) |
+| [0496-next-greater-element-i](https://github.com/Mahavir717-virda/LeetCode/tree/master/0496-next-greater-element-i) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
 ## Greedy
 |  |
@@ -62,4 +64,12 @@ Backup by [SyncLeet](https://chromewebstore.google.com/detail/syncleet/maoikpiio
 |  |
 | ------- |
 | [1346-check-if-n-and-its-double-exist](https://github.com/Mahavir717-virda/LeetCode/tree/master/1346-check-if-n-and-its-double-exist) |
+## Stack
+|  |
+| ------- |
+| [0496-next-greater-element-i](https://github.com/Mahavir717-virda/LeetCode/tree/master/0496-next-greater-element-i) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0496-next-greater-element-i](https://github.com/Mahavir717-virda/LeetCode/tree/master/0496-next-greater-element-i) |
 <!---LeetCode Topics End-->
